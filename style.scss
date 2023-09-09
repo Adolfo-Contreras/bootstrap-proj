@@ -1,0 +1,31 @@
+#backgroundimg {
+    background-image: url(images/computer-keyboard-electronics-modern-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .cust-color {
+    color: #8B37FF;
+  }
+  
+  .card {
+    border: 0;
+  }
+  
+  .btn {
+    background-color: #8B37FF;
+    border: .25rem #8B37FF solid;
+    color: #fff;
+    border-radius: 2rem;
+        &:hover {
+    border: .25rem #8B37FF solid;
+    color: #8B37FF;
+    background-color: #fff;
+  }
+}
+#cust-bg-c{
+  background-color: #cdcecf;
+}
+.cust-text-color{
+  color: #cdcecf;
+}
