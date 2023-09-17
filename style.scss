@@ -1,7 +1,7 @@
 #backgroundimg {
-    background-image: url(images/computer-keyboard-electronics-modern-preview.jpg);
+    background-image: url(images/computer-darkened.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;    
   }
   
   .cust-color {
@@ -28,4 +28,23 @@
 }
 .cust-text-color{
   color: #cdcecf;
+}
+.w-px{
+  width: 1px;
+}
+.h-px{
+  height: 1px;
+}
+.h-fit{
+  height: fit-content;
+}
+.rotate-element {
+  transform: rotate(0deg);
+}
+
+
+@media (min-width: 576px) {
+  .rotate-element {
+    transform: rotate(90deg); 
+  }
 }
