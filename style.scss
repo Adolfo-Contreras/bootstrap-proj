@@ -1,7 +1,18 @@
 #backgroundimg {
     background-image: url(images/computer-darkened.jpg);
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover;
+   backdrop-filter: blur(8px);    
+  }
+  #backgroundimg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
   }
   
   .cust-color {
@@ -41,10 +52,39 @@
 .rotate-element {
   transform: rotate(0deg);
 }
-
+.font-h-size{
+  font-size: 2rem;
+}
 
 @media (min-width: 576px) {
   .rotate-element {
     transform: rotate(90deg); 
   }
+  .font-sm-size{
+    font-size: 2.5rem;
+  }
+  .font-h-sm-size{
+    font-size: 3.5rem;
+  }
 }
+@media (min-width: 768px) { 
+  .font-md-size{
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 992px) { 
+  .font-lg-size{
+    font-size: 4.5rem;
+  }
+}
+//did not need these but thought to keep them just incase
+@media (min-width: 1200px) {
+  .font-xl-size{
+    font-size: 5.5rem;
+  }
+ }
+@media (min-width: 1400px) {
+  .font-2xl-size{
+    font-size: 8rem;
+  }
+ }
